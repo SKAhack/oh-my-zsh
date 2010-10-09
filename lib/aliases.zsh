@@ -21,4 +21,7 @@ alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
 
-alias x=extract
+alias -g L='| less'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g X='| xargs'
