@@ -3,7 +3,6 @@ alias pu='pushd'
 alias po='popd'
 
 # Basic directory operations
-alias ...='cd ../..'
 alias -- -='cd -'
 
 # Super user
