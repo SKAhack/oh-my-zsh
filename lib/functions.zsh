@@ -50,3 +50,7 @@ function extract() {
   fi
 }
 
+function zshrc_reload() {
+  source ~/.zshrc
+}
+
