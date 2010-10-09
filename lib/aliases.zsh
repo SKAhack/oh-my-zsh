@@ -20,3 +20,8 @@ alias ll='ls -l'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
+
+alias -g L='| less'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g X='| xargs'
