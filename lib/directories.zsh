@@ -37,3 +37,22 @@ alias md='mkdir -p'
 alias rd=rmdir
 
 alias d='dirs -v'
+
+# http://subtech.g.hatena.ne.jp/secondlife/20080604/1212562182
+# e.g) cdf .vim
+function cdf() {
+       local -a tmpparent; tmpparent=""
+       local -a filename; filename="${1}"
+       local -a file
+       local -a num; num=0
+       while [ $num -le 10 ]; do
+               tmpparent="${tmpparent}../"
+               file="${tmpparent}${filename}"
+               if [ -f "${file}" ] || [ -d "${file}" ]; then
+                       cd ${tmpparent}
+                       break
+               fi
+               num=$(($num + 1))
+       done
+}
+
