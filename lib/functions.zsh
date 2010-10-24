@@ -41,4 +41,3 @@ function take() {
 function zshrc_reload() {
   source ~/.zshrc
 }
-
