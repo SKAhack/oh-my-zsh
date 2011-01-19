@@ -11,3 +11,6 @@ setopt long_list_jobs
 ## pager
 export PAGER=less
 export LC_CTYPE=ja_JP.UTF-8
+
+## editor
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim

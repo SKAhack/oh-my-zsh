@@ -25,3 +25,7 @@ alias -g L='| less'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g X='| xargs'
+
+#alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias gvim='env LANG=ja_JP.UTF-8 open -a /Applications/MacVim.app "$@"'
