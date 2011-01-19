@@ -35,7 +35,6 @@ cd () {
 
 alias md='mkdir -p'
 alias rd=rmdir
-
 alias d='dirs -v'
 
 # http://subtech.g.hatena.ne.jp/secondlife/20080604/1212562182
@@ -56,3 +55,7 @@ function cdf() {
        done
 }
 
+# mkdir & cd to it
+function mcd() { 
+  mkdir -p "$1" && cd "$1"; 
+}
