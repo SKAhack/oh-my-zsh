@@ -5,8 +5,8 @@ function git_char {
 	echo '±'
 }
 function repository() {
-	git branch >/dev/null 2>/dev/null && git_prompt_info && return
-	hg root >/dev/null 2>/dev/null && hg_prompt_info && return
+	#git branch >/dev/null 2>/dev/null && git_prompt_info && return
+	#hg root >/dev/null 2>/dev/null && hg_prompt_info && return
 }
 
 PROMPT='%{$reset_color%}[ %F{215}%~ %F{255}] $(repository)
