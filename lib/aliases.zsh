@@ -29,3 +29,7 @@ alias -g X='| xargs'
 #alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 #alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias gvim='env LANG=ja_JP.UTF-8 open -a /Applications/MacVim.app "$@"'
+
+alias jenkins_start='java -jar /usr/local/Cellar/jenkins/1.401/lib/jenkins.war --httpPort=8081'
+
+alias x=extract
