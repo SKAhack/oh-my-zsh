@@ -9,9 +9,6 @@ function repository() {
 	hg root >/dev/null 2>/dev/null && hg_prompt_info && return
 }
 
-PROMPT='%{$reset_color%}[ %F{215}%~ %F{255}] $(repository)
-%F{117}\$ %{$reset_color%}'
-# RPROMPT='%B%F{208}%n%f%{$fg_bold[white]%}@%F{039}%m%f%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{117}$(git_char)%F{255}: "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -22,3 +19,7 @@ ZSH_THEME_HG_PROMPT_PREFIX="%F{117}hg %F{255}: "
 ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_DIRTY="%F{213} ✘%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_CLEAN="%F{113} ✔%{$reset_color%}"
+
+PROMPT='%{$reset_color%}[ %F{215}%~ %F{255}] $(repository) ruby: $(~/.rvm/bin/rvm-prompt v)
+%F{117}\$ %{$reset_color%}'
+# RPROMPT='%B%F{208}%n%f%{$fg_bold[white]%}@%F{039}%m%f%{$reset_color%}'
