@@ -9,7 +9,6 @@ function repository() {
 	hg root >/dev/null 2>/dev/null && hg_prompt_info && return
 }
 
-
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{117}$(git_char)%F{255}: "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%F{213} ✘%{$reset_color%}"

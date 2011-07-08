@@ -15,6 +15,10 @@ function take() {
   cd $1
 }
 
+function zshrc_reload() {
+  source ~/.zshrc
+}
+
 function extract() {
     unset REMOVE_ARCHIVE
     
